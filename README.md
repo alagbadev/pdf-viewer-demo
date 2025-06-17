@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Demonstração: Visualizador de PDF com Busca e Grifo
 
-## Getting Started
+Este projeto é uma demonstração técnica desenvolvida para um sistema de GED (Gerenciamento Eletrônico de Documentos). O objetivo é validar a implementação de um visualizador de PDF avançado com funcionalidades de busca de texto e anotação (grifo) permanente.
 
-First, run the development server:
+## ✨ Funcionalidades Implementadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+-   **Visualização de PDF:** Renderização de documentos PDF no navegador.
+-   **Busca por Texto:** Campo de busca que destaca em tempo real todas as ocorrências de um termo na página visível.
+-   **Grifo Manual Permanente:** Permite ao usuário selecionar um trecho de texto com o mouse e aplicar um grifo amarelo que é salvo diretamente no arquivo PDF em memória. Múltiplos grifos podem ser adicionados sequencialmente.
+-   **Controles de Navegação:** Paginação (página anterior/próxima) e controle de zoom.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Tecnologias Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-   **Next.js:** Framework React para renderização no lado do servidor e do cliente.
+-   **React:** Biblioteca para construção da interface de usuário.
+-   **TypeScript:** Para um código mais robusto e com tipagem estática.
+-   **react-pdf:** Para a renderização e interação com a camada de texto do PDF.
+-   **pdf-lib:** Para a manipulação e modificação direta dos bytes do arquivo PDF, permitindo a criação de anotações permanentes.
+-   **Tailwind CSS:** Para estilização rápida e responsiva.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚙️ Como Executar o Projeto Localmente
 
-## Learn More
+1.  **Clone o repositório:**
+    ```bash
+    git clone [URL_DO_SEU_REPOSITÓRIO_AQUI]
+    ```
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+3.  **Execute o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+4.  Abra [http://localhost:3000/pdf](http://localhost:3000/pdf) no seu navegador para ver o resultado.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Desenvolvido por **Helder**.
